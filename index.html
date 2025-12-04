@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panes Delicia - Panaderia</title>
+
+    <style>
+        /* Paleta de Colores Cálidos: */
+        /* Naranja para acentos: #FF8C00 (DarkOrange) */
+        /* Durazno Suave para fondo: #FFDAB9 (PeachPuff) */
+        /* Marrón para texto/pie de página: #A0522D (Sienna) */
+        /* Blanco Crema para secciones: #FFF8DC (Cornsilk) */
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FFDAB9; /* Fondo Durazno Suave */
+            color: #4B4B4B; 
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #FF8C00; /* Naranja Brillante para el encabezado */
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Estilo para las pestañas (etiqueta <details>) */
+        .seccion-pancitos, .seccion-pedido, .seccion-contacto {
+            background-color: #FFF8DC; /* Blanco Crema para el fondo de las secciones */
+            border: 2px solid #A0522D; /* Borde Marrón Suave */
+            border-radius: 12px;
+            margin-bottom: 25px;
+            padding: 15px 20px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo para el título de la pestaña (etiqueta <summary>) */
+        summary {
+            cursor: pointer;
+            font-size: 1.4em;
+            color: #A0522D; /* Marrón Suave para el título */
+            padding: 10px 0;
+            list-style: none; /* Oculta el triángulo predeterminado del navegador */
+        }
+
+        /* Para agregar un ícono de flecha personalizado */
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary::before {
+            content: '▶'; /* Flecha a la derecha (cerrado) */
+            display: inline-block;
+            margin-right: 15px;
+            color: #FF8C00;
+            transition: transform 0.2s;
+        }
+        details[open] summary::before {
+            transform: rotate(90deg); /* Gira la flecha cuando está abierto */
+        }
+
+        .contenido-pestaña {
+            padding-top: 15px;
+            margin-top: 15px;
+            border-top: 1px dashed #FF8C00; /* Línea separadora punteada */
+        }
+
+        /* Estilo para las tarjetas de perros */
+        .tarjeta-perro {
+            background-color: white;
+            border: 1px solid #FFDAB9; 
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .tarjeta-perro h3 {
+            color: #FF8C00;
+            margin-top: 0;
+        }
+        
+        ol {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #A0522D; /* Marrón Suave para el pie de página */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PANADERIA</h1>
+        <p>¡Los mejores paenes!</p>
+    </header>
+
+    <main>
+        <details class="seccion-pancitos" open>
+            <summary><h2> Pancitos</h2></summary>
+            <div class="contenido-pestaña">
+                <p>Aquí encontrarás a todo tipo de pan.</p>
+                
+
+
+
+                <div class="tarjeta-pan">
+                    <h3>Queque</h3>
+                    <p>Queque de chocolate | Precio: 20 bs</p>
+                    <p>Queque ideal para que la familia disfrute.</p>
+                </div>
+                
+                <div class="tarjeta-pan">
+                    <h3>Cuerno</h3>
+                    <p>Cuerno con dulce | Precio: 5 bs</p>
+                    <p>Lo mejor de nuestra panaderia.</p>
+                </div>
+            </div>
+        </details>
+
+        <details class="seccion-pedido">
+            <summary><h2>Pedidos </h2></summary>
+            <div class="contenido-pestaña">
+                <p>Realiza tus pedidos :</p>
+                <ol>
+                    <li>Llena el Formulario de Solicitud online.</li>
+                </ol>
+            </div>
+        </details>
+
+        <details class="seccion-contacto">
+            <summary><h2>📞 Contáctanos y Ubicación</h2></summary>
+            <div class="contenido-pestaña">
+                <p>¿Tienes preguntas? ¡Estamos aquí para ayudarte!</p>
+                <p>Email: 📧 panaderia.org</p>
+                <p>Teléfono: 📱 +591 76793875</p>
+                <p>Dirección: 📍 Plan 3000, Ciudad Santa Cruz de la Sierra.</p>
+            </div>
+        </details>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Panaderia "Panes delicia".</p>
+    </footer>
+
+</body>
+</html>
