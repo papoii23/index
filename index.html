@@ -15,7 +15,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #FFDAB9; /* Fondo Durazno Suave */
-            color: #4B4B4B; 
+            color: #A0522D; /* Cambiado a Marrón para que el texto sea legible */
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -54,9 +54,9 @@
         summary {
             cursor: pointer;
             font-size: 1.4em;
-            color: #A0522D; /* Marrón Suave para el título */
+            color: #A0522D; /* Marrón para el título */
             padding: 10px 0;
-            list-style: none; /* Oculta el triángulo predeterminado del navegador */
+            list-style: none;
         }
 
         /* Para agregar un ícono de flecha personalizado */
@@ -77,26 +77,34 @@
         .contenido-pestaña {
             padding-top: 15px;
             margin-top: 15px;
-            border-top: 1px dashed #FF8C00; /* Línea separadora punteada */
+            border-top: 1px dashed #A0522D; /* Línea separadora punteada */
         }
 
-        /* Estilo para las tarjetas de perros */
-        .tarjeta-perro {
+        /* Estilo para las tarjetas de pan */
+        .tarjeta-pan {
             background-color: white;
             border: 1px solid #FFDAB9; 
             padding: 15px;
             margin: 15px 0;
             border-radius: 8px;
             box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            color: #A0522D; /* Asegurar color marrón para el texto de la tarjeta */
         }
 
-        .tarjeta-perro h3 {
-            color: #FF8C00;
+        .tarjeta-pan h3 {
+            color: #FF8C00; /* Naranja para los títulos de los productos */
             margin-top: 0;
         }
         
         ol {
             padding-left: 20px;
+        }
+        
+        /* Estilo para el enlace del formulario */
+        a {
+            color: #FF8C00; /* Color naranja de acento para el enlace */
+            text-decoration: none;
+            font-weight: bold;
         }
 
         footer {
@@ -111,40 +119,52 @@
 <body>
 
     <header>
-        <h1>PANADERIA</h1>
-        <p>¡Los mejores paenes!</p>
+        <h1>PANES DELICIA</h1>
+        <p>¡Los mejores panes y postres frescos!</p>
     </header>
 
     <main>
         <details class="seccion-pancitos" open>
-            <summary><h2> Pancitos</h2></summary>
+            <summary><h2>🍞 Nuestro Menú</h2></summary>
             <div class="contenido-pestaña">
-                <p>Aquí encontrarás a todo tipo de pan.</p>
+                <p>Aquí encontrarás una selección de nuestros productos más vendidos.</p>
                 
-
-
-
                 <div class="tarjeta-pan">
-                    <h3>Queque</h3>
-                    <p>Queque de chocolate | Precio: 20 bs</p>
+                    <h3>Queque de Chocolate</h3>
                     <p>Queque ideal para que la familia disfrute.</p>
+                    <p>Precio: **20 Bs**</p>
                 </div>
                 
                 <div class="tarjeta-pan">
-                    <h3>Cuerno</h3>
-                    <p>Cuerno con dulce | Precio: 5 bs</p>
-                    <p>Lo mejor de nuestra panaderia.</p>
+                    <h3>Cuerno de Dulce</h3>
+                    <p>Lo mejor de nuestra panadería: hojaldre crujiente con relleno dulce.</p>
+                    <p>Precio: **5 Bs**</p>
                 </div>
             </div>
         </details>
 
         <details class="seccion-pedido">
-            <summary><h2>Pedidos </h2></summary>
+            <summary><h2>📝 Encuesta de Satisfacción</h2></summary>
             <div class="contenido-pestaña">
-                <p>Realiza tus pedidos :</p>
+                <p>Tu opinión es muy importante para nosotros. Por favor, rellena la siguiente encuesta:</p>
                 <ol>
-                    <li>Llena el Formulario de Solicitud online.</li>
+                    <li>Haz clic en el enlace o usa el formulario incrustado abajo.</li>
                 </ol>
+                
+                <p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2yyX0vqqnCsS17ch_WDSXEeTi-WolpdXXBpEBy35MX7JFaQ/viewform" target="_blank">
+                        Abrir el Formulario de la Encuesta en una nueva pestaña
+                    </a>
+                </p>
+
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSe2yyX0vqqnCsS17ch_WDSXEeTi-WolpdXXBpEBy35MX7JFaQ/viewform?embedded=true" 
+                    width="100%" 
+                    height="1623" 
+                    frameborder="0">
+                    Cargando el formulario...
+                </iframe>
+
             </div>
         </details>
 
@@ -152,15 +172,15 @@
             <summary><h2>📞 Contáctanos y Ubicación</h2></summary>
             <div class="contenido-pestaña">
                 <p>¿Tienes preguntas? ¡Estamos aquí para ayudarte!</p>
-                <p>Email: 📧 panaderia.org</p>
-                <p>Teléfono: 📱 +591 76793875</p>
-                <p>Dirección: 📍 Plan 3000, Ciudad Santa Cruz de la Sierra.</p>
+                <p>Email: 📧 **contacto@panesdelicia.com**</p>
+                <p>Teléfono: 📱 **+591 76793875**</p>
+                <p>Dirección: 📍 **Plan 3000, Ciudad Santa Cruz de la Sierra.**</p>
             </div>
         </details>
     </main>
 
     <footer>
-        <p>&copy; 2025 Panaderia "Panes delicia".</p>
+        <p>&copy; 2025 Panaderia "Panes Delicia".</p>
     </footer>
 
 </body>
